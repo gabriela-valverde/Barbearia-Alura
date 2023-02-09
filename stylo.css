@@ -1,0 +1,307 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+header {
+  background: #BBBBBB;
+  padding: 20px 20px;  /*margem em cima e embaixo*/
+}
+
+.caixa {
+  position: relative; /*a posição da caixa tem quer relativa a posição dos links*/
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;     /*referente ao posicionamento dos links no cabeçalho*/
+  top: 100px;
+  right: 0;
+}
+
+nav li {
+  display: inline; /*os links ficam em linha*/
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase; /*letra maisculas*/
+  color: #000000;
+  font-weight: bold;         /*fonte negrito*/
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {   /*quando o mouse passar pela letra ele mudarar de cor e aparecerar a linha sublinhada*/
+            color: #c78c19;
+            text-decoration: underline;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.produtos{
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.produtos li{
+
+  display: inline-block;         /*deixa os itens da li em linha e bloco organizados*/
+  text-align: center;            /*centralizar o conteudo*/
+  width: 30%;                    /*distribuição dos elementos */
+  vertical-align: top;           /*itens alinhados pela linha de cima*/
+  margin: 0 1.5%;
+  padding: 30px 20px;            /*espaçamento interno dos elemetos*/
+  box-sizing: border-box;
+  border: 2px solid #000000;   /*efeito borda nos produtos*/
+  border-radius: 20px;           /*efeito borda arredondada*/
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+.produtos li:hover {                                      /*efeito do mouse na li dos produtos*/
+                color: #c78c19;
+                text-decoration: underline;   
+}
+
+.produtos li:active {                                     /*efeito do mouse na borda dos produtos enquanto ativo*/
+                 color: #077a29;       
+
+}
+
+.produtos li:hover h2 {                                   /*efeito do mouse no h2, no titulo do produto*/
+  font-size: 35px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+.produtos h2{
+  font-size: 25px;     /*--tamanho da fonte e peso da fonte--*/
+  font-weight: bold;
+}
+
+.produtos-descricao{
+  font-size: 18px;      /*--tamanho da fonte da descricão do serviço--*/
+  margin-bottom: 5px;
+}
+
+.produto-preco {
+  font-size:20px ;      /*--tamanho da fonte do preço dos serviços--*/
+  font-weight:bold ;
+}
+
+footer {
+  text-align: center; 
+  background: url("bg.jpg") ;
+  padding: 40px 0px;
+}
+
+.copyright{
+  color: #ffffff;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+/*-----------------------------------------------Formulario edição---------------------------------------------------------------*/
+
+main {
+  width: 940px;  /*--Usamos essa formatação para editar a tabela e colocar centralizada o texto--*/
+  margin: 0 auto;
+}
+
+form {
+  margin: 40px 0; } /*--Usamos essa formataçã para espaçar em cima e embaixo da tabela--*/
+
+form label, form legend {  /*--configuração to parágrafo e do laber num geral--*/
+  display: block;
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+
+.input-padrao {  /*--foi designadopar a ser inpot-padrao, para o bloco de cima, com as caixas de inserção de dados--*/
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%
+}
+
+.checkbox{
+  margin: 20px 0;
+}
+
+form p {
+  color: red;
+  font-size: 30px;
+}
+
+.enviar {                      /*--Botão--*/
+width: 40%;
+padding: 15px 0;
+background-color: orange;
+color: white;
+font-weight: bold;
+font-size: 18px;
+border: none;
+border-radius: 5px;
+transition: 1s background-color all;     /*--a transição dos elementos demora 1s par aacontercer--*/
+cursor: pointer;       /*--o curso vira uma mão--*/
+}
+
+.enviar:hover {                      /*--mouse por cima laranja escuro--*/
+background-color: darkorange;/*--ao passar o mouse emcima do elemento ele amenta em 20%--*/
+transform: scale(1.2);                                            
+}
+
+/*--css da semantica correta das tabelas --*/
+table {
+margin: 20px 0 40px;
+}
+
+/*--Cabecalho da tabela , cor de fundo cor da fonte e  tamanho--*/
+thead { 
+background: #555555;    
+color: white;
+font-size:  bold                                             
+}
+
+/*--td = coluna - tr = linha ( bordas, experssura e cor e distancia interna da tabela--*/
+
+td, tr {
+border: 1px solid #000000;
+padding: 8px 15px;                                       
+}
+
+                                                      /*--Página Inicial--*/
+
+        .banner{
+          width:20%;
+          text-align: center;
+        }
+
+        .titulo-principal{
+          text-align: center;
+          font-size: 2em;
+          margin: 0 0 1em;
+          clear: left;
+          color: rgba(0, 0, 0, 0.3);   /*--opacidade do titulo usando no próprio grid--*/
+          text-shadow: 2px 2px  #ff0000 ;
+        
+        }
+
+        .principal {
+          padding: 3em 0;
+          background:#fefefe;
+          width: 940px;  /*--Usamos essa formatação para editar a tabela e colocar centralizada o texto--*/
+          margin: 0 auto;
+        }
+
+        .pricipal p {    
+          margin: 0 0 1em;
+        }
+
+        .pricipal strong {
+          font-weight: bold;
+        }
+
+        .principal em {                /*--para todas vezes que aparecer um (em) o texto será itálico--*/
+          font-style: italic;
+        }
+
+        #missao{ 
+          font-weight: bold;
+        }
+
+
+
+        .utensilios{           
+            width: 20%;
+            float:left;                /*--O float afeta toda a página, por isso precisamo sutilizar a propriedade clean, para limpar a página--*/
+            margin: 0px 20px 0px 0px;
+        } 
+
+        .mapa {
+          padding: 3em 0;
+          background: linear-gradient(#fefefe, #888888);
+        }
+
+
+       .mapa-conteudo {
+          width: 940px;  /*--Usamos essa formatação para editar a tabela e colocar centralizada o texto--*/
+          margin: 0 auto;
+
+      }
+
+        .mapa p {
+          margin: 0 0 2em;
+          text-align: center;
+          font-size: larger;
+        }
+
+        .beneficios{
+          padding: 3em 0;
+          background: #888888;
+          width: 940px;  /*--Usamos essa formatação para editar a tabela e colocar centralizada o texto--*/
+          margin: 0 auto;
+        }
+
+        .conteudo-beneficios{
+          width: 640px;
+          margin: 0 auto;
+        }
+
+        .lista-beneficios{
+           width: 40%;
+           display: inline-block;
+           vertical-align: top;   /*---->  alinhar texto as pontas--*/
+          }
+
+
+          .itens{
+            line-height: 1.5em;
+          }
+
+/*---------classe pseudo elemento para descatar em negrito no uçtimo ou primeiro elemrnto da lista------*/          
+
+          .itens:first-child{
+            font-weight: bold;
+          }
+/*----------------------------------------------------------------------------------------------*/
+        .imagem-beneficios{
+          width: 60%;
+          
+        }    
+        
+        .itens:before
+        { 
+          content: "★";
+        }
+        
+        .imagem-beneficios
+        {
+          width: 60%;
+          opacity: 1;
+          transition: 400ms;
+          box-shadow: 10px 10px 20px 10px;  /*---->  Sombra--*/
+          box-shadow:  0 0 30px #ff0000;
+       
+
+        }
+
+        .imagem-beneficios:hover
+        {
+          opacity: 0.3;
+        }
+
+        .video
+        {
+          width:560;
+          margin: 2em auto;
+        }
+
+
+
+
+/*----------------------------------------Degradê------------------------------------------------*/
+

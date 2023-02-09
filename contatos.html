@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+          
+<head>
+          <meta charset="UTF-8">
+          <title>Contatos - Barbearia Alura</title>
+          <link rel="stylesheet" href="reset.css">
+          <link rel="stylesheet" href="style-contatos.css">
+
+</head>
+
+<body> 
+      <header>
+
+        <div class="caixa">
+              <h1><img src="logo.png" alt="Logo da barbearia Alura"></h1>  <!--ALTERNATIVA DE DESCRIÇÃO DA IMAGEN PARA ASSECIBILIDADE-->
+
+                  <nav>
+                        <ul>
+                                    <li><a href="index.html">Home</a></li> 
+                                    <li><a href="produtos.html">Produtos</a></li> 
+                                    <li><a href="contatos.html">Contatos</a></li> 
+                        </ul>
+                  </nav>
+        </div>
+
+      </header>    
+          
+      <!--Miolo da divião (semântica - usamos a tag main)-->
+
+      <main>
+            
+            <form> 
+                              <label for="nomesobrenome">Nome e Sobrenome</label>
+                              <input type="name" id="nomesobrenome" class="input-padrao" required>
+
+                              <label for="email">Email</label>
+                              <input type="email" id="email" class="input-padrao" required placeholder="seuemail@diminio.com"> <!--input type=email -> identifica no campo do site o email -->
+
+                              <label for="telefone">Telefone</label>
+                              <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                              <label for="mensagem">Mensagem</label>
+                              <textarea cols="68" rows="10" id="mensagem" class="input-padrao" ></textarea><!--O Usuario pode criar mas de uma linha de texto-->
+                        
+                              
+                        <fieldset class="contato"> <!--fieldset - referente a um assunto específico, exemplo dados de um cartão de crédito-->
+
+                              <legend>Como Prefere ser contactado?</p>
+                              <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+                              <!--Formato de uma bolinha-->
+                              <!--podemos colocar as duas tags juntas em uma linha de código,
+                              para que a bolinha fique antes do nome-->
+                              <label for="radio-telefone">
+                              <input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+
+                              <label for="radio-watsapp">
+                              <input type="radio" name="contato" volue="watsapp" id="radio-watsapp" checked>WatsApp</label>
+
+                              <label class="checkbox">
+                              <input type="checkbox" checked>Gostaria de receber nosass novidades por e-mail?</label>
+
+                        </fieldset>
+
+                                                <!--Usamos palvra reservada
+                                                checked
+                                                -->
+
+
+                        <fieldset>
+
+                              <legend>Qual Horário prefere ser Atendido?</p> <!--as opcoes -->
+
+                              <select>   
+                              <option>Manhã</option> 
+                              <option>Tarde</option>
+                              <option>Noite</option>
+                              </select>
+
+                        </fieldset>
+                        
+                        <input  type="submit" value="Enviar Formulário" class="enviar" > 
+
+            </form>
+
+            <table>
+
+                  <thead>                           <!--Cabeçalho da tabela do produto -->
+                        <tr>
+                              <th>Dia</th>
+                              <th>Hora</th>                  
+                        </tr>
+                  </thead>
+
+
+                  <tbody>                             <!--TAbela do corpo -->
+                        <tr>
+                              <td>Segunda</td>
+                              <td>8h as 20h</td>                  
+                        </tr>
+
+                        <tr>
+                              <td>Quartas</td>
+                              <td>8h as 20h</td>                  
+                        </tr>
+
+                        <tr>
+                              <td>Sextas</td>
+                              <td>8h as 20h</td>                  
+                        </tr>
+
+
+
+                  </tbody>
+
+            </table>
+            
+
+      </main>
+
+      <footer>
+            <img src="logo-branco.png" alt="Logo da barbearia Alura">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+      </footer>
+
+
+</body>
+</html>

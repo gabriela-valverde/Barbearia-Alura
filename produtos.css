@@ -1,0 +1,112 @@
+header {
+          background: #BBBBBB;
+          padding: 20px 20px;  /*margem em cima e embaixo*/
+}
+
+.caixa {
+          position: relative; /*a posição da caixa tem quer relativa a posição dos links*/
+          width: 940px;
+          margin: 0 auto;
+}
+
+
+nav {
+          position: absolute;     /*referente ao posicionamento dos links no cabeçalho*/
+          top: 100px;
+          right: 0;
+}
+
+
+
+nav li {
+          display: inline; /*os links ficam em linha*/
+          margin: 0 0 0 15px;
+}
+
+nav a {
+          text-transform: uppercase; /*letra maisculas*/
+          color: #000000;
+          font-weight: bold;         /*fonte negrito*/
+          font-size: 22px;
+          text-decoration: none;
+}
+
+nav a:hover {   /*quando o mouse passar pela letra ele mudarar de cor e aparecerar a linha sublinhada*/
+                    color: #c78c19;
+                    text-decoration: underline;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.produtos{
+          width: 940px;
+          margin: 0 auto;
+          padding: 50px 0;
+}
+
+.produtos li{
+
+          display: inline-block;         /*deixa os itens da li em linha e bloco organizados*/
+          text-align: center;           /*centralizar o conteudo*/
+          width: 30%;              /*distribuição dos elementos */
+          vertical-align: top;       /*itens alinhados pela linha de cima*/
+          margin: 0 1.5%;
+          padding: 30px 20px;          /*espaçamento interno dos elemetos*/
+          box-sizing: border-box;
+          border: 2px solid #000000;   /*efeito borda nos produtos*/
+          border-radius: 20px;           /*efeito borda arredondada*/
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+.produtos li:hover {                                      /*efeito do mouse na li dos produtos*/
+                        color: #c78c19;
+                        text-decoration: underline;   
+}
+
+
+.produtos li:active {                                     /*efeito do mouse na borda dos produtos enquanto ativo*/
+                         color: #077a29;       
+       
+}
+
+.produtos li:hover h2 {                                   /*efeito do mouse no h2, no titulo do produto*/
+          font-size: 35px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+
+.produtos h2{
+          font-size: 25px;     /*tamanho da fonte e peso da fonte*/
+          font-weight: bold;
+}
+
+
+.produtos-descricao{
+          font-size: 18px;      /*tamanho da fonte da descricão do serviço*/
+          margin-bottom: 5px;
+}
+
+
+.produto-preco {
+          font-size:20px ;      /*tamanho da fonte do preço dos serviços*/
+          font-weight:bold ;
+}
+
+footer {
+
+          text-align: center; 
+          background: url("bg.jpg") ;
+          padding: 40px 0px;
+}
+
+.copyright{
+          color: #ffffff;
+          font-size: 13px;
+          margin-top: 20px;
+}
+
